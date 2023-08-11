@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 
 * {
   margin: 0;
@@ -8,7 +8,7 @@
 
 body {
   overflow-x: hidden;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 
 a {
@@ -20,6 +20,7 @@ ul li {
   list-style: none;
 }
 
+/* NAVBAR */
 nav {
   background-color: rgb(255, 255, 255);
   display: flex;
@@ -30,51 +31,115 @@ nav {
 }
 
 nav a img {
-    width: 50%;
+  width: 50%;
+  transition: .3s ease;
 }
 
-nav ul{
-    display: flex;
-    /* background-color: azure; */
+nav a img:hover {
+    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.507));
+}
+
+nav ul {
+  display: flex;
 }
 
 nav ul li {
-    border: 2px solid;
-    padding: 4px 8px;
-    margin: 0 20px;
-    text-transform: uppercase;
-    font-size: 1.4rem;
-    background: transparent;
-    font-weight: bold;
-    letter-spacing: 3px;
-    transition: .3s ease;
+  border: 2px solid;
+  padding: 4px 8px;
+  margin: 0 20px;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  background: transparent;
+  font-weight: bold;
+  letter-spacing: 3px;
+  transition: 0.3s ease;
 }
-nav ul li a{
-    color: #000000;
+nav ul li a {
+  color: #000000;
 }
 
 nav ul li:hover {
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.459);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.459);
 }
 
 nav ul .special {
-    border: 3px solid rgb(255, 153, 0);
+  border: 3px solid rgb(255, 153, 0);
 }
 
 nav ul .special a {
-    color: rgb(255, 153, 0);
+  color: rgb(255, 153, 0);
 }
 
 nav ul .special:hover {
-    box-shadow: 0px 0px 20px rgba(255, 153, 0, 0.541);
+  box-shadow: 0px 0px 20px rgba(255, 153, 0, 0.541);
 }
 
-.purchase_list li {
-  background-color: blue;
-  width: 10%;
-}
+/* MAIN VIDEO BG */
 
-.purchase_list li img {
+main {
   width: 100%;
-  height: 100%;
+  /* min-height: 100vh; */
+  /* background: #8b8b8b; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+main .video-bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -3;
+    filter: brightness(0.6);
+}
+
+main .logo_main {
+  width: 50%;
+  margin-top: 10%;
+  /* background-color: #c24242; */
+}
+
+main .main_txt {
+  font-size: 2.5rem;
+  color: white;
+  letter-spacing: 2px;
+  margin: 0 0 40px 0;
+  text-shadow: 0px 0px 30px white;
+  /* -webkit-text-stroke: 0.1px rgb(0, 0, 0); */
+  /* filter: drop-shadow(10px 10px 20px rgba(255, 255, 255, 0.507)); */
+}
+
+main .purchase_list {
+  /* background-color: aliceblue; */
+  /* width: 50%; */
+  display: flex;
+  justify-content: space-between;
+}
+
+main .purchase_list li {
+  background-color: rgb(255, 153, 0);
+  margin: 0 20px 0 20px;
+  width: 100px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s ease;
+  border: 2px solid transparent;
+}
+
+main .purchase_list li:hover {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 153, 0);
+}
+
+main .purchase_list li a i {
+    font-size: 50px;
+    color: white;
+    transition: .5s ease;
+}
+
+main .purchase_list li:hover a i {
+    color: rgb(255, 153, 0);
+  }
