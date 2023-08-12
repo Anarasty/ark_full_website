@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <!--! FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--! AOS LIB -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>ARK: Survival Evolved</title>
   </head>
   <body>
@@ -27,9 +30,9 @@
         </video>
 
 
-      <img class="logo_main" src="assets/logo_big.png" alt="logo_main_big" />
-      <h3 class="main_txt">BUY NOW ON</h3>
-      <ul class="purchase_list">
+      <img data-aos="zoom-out" class="logo_main" src="assets/logo_big.png" alt="logo_main_big" />
+      <h3 data-aos="fade-up" data-aos-duration="2000" class="main_txt">BUY NOW ON</h3>
+      <ul data-aos="fade-up" data-aos-duration="2000" class="purchase_list">
         <li><a href="https://store.steampowered.com/app/346110/ARK_Survival_Evolved/" target="_blank"><i class="fa-brands fa-steam"></i></a></li>
         <li><a href="https://store.playstation.com/ru-ua/product/EP0688-CUSA06782_00-ARKSEGAME0000000" target="_blank"><i class="fa-brands fa-playstation"></i></a></li>  
         <li><a href="https://www.xbox.com/ru-RU/games/store/ark-survival-evolved/BNBLC4ZGFNKB" target="_blank"><i class="fa-brands fa-xbox"></i></a></li>  
@@ -38,6 +41,64 @@
         <li><a href="https://play.google.com/store/apps/details?id=com.studiowildcard.wardrumstudios.ark&hl=en_US" target="_blank"><i class="fa-brands fa-android"></i></a></li>  
     </ul>
     </main>
+
+    <div class="horizontal-line-orange">
+
+    </div>
+    <section class="main-page-info">
+
+      <div data-aos="fade-up" data-aos-duration="1000" class="main-info-block">
+        <h2>OPEN WORLD</h2>
+        <p>Explore huge islands with a variety of biomes, and creatures, conquer the ocean and skies.</p>
+      </div>
+
+      <div data-aos="fade-up" data-aos-duration="1400" class="main-info-block">
+        <h2>SURVIVAL</h2>
+        <p>Survive in a prehistoric world, create armor and build structures to defend yourself from dangerous creatures and other players.</p>
+      </div>
+
+      <div data-aos="fade-up" data-aos-duration="1800" class="main-info-block">
+        <h2>MULTIPLAYER</h2>
+        <p>Invite friends to survive together, create clans and assert your supremacy by taming the best creatures.</p>
+      </div>
+
+      <div data-aos="fade-up" data-aos-duration="2200" class="main-info-block">
+        <h2>EVOLVE</h2>
+        <p>Level up your character, improve their skills and abilities, and level up tamed creatures.</p>
+      </div>
+
+      <div data-aos="fade-up" data-aos-duration="2600" class="main-info-block">
+        <h2>BOSS FIGHTS</h2>
+        <p>Kill bosses, unlock new crafting recipes and unique rewards, and progress through the game. </p>
+      </div>
+    </section>
+    <div class="horizontal-line-orange">
+
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: "aos-init", // class applied after initialization
+        animatedClassName: "aos-animate", // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 3000, // values from 0 to 3000, with step 50ms
+        easing: "ease", // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+      });
+    </script>
 
     <script src="main.js"></script>
   </body>
