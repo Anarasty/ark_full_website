@@ -166,6 +166,7 @@ main .purchase_list li:hover a i {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  /* background-attachment: fixed; */
   /* filter: brightness(0.1); */
 }
 
@@ -191,4 +192,85 @@ main .purchase_list li:hover a i {
   text-align: center;
   font-weight: 100;
   /* line-height: 25px; */
+}
+
+/*? big description section 1 */
+.big-description-section {
+  position: relative;
+  width: 100%;
+  height: 88vh;
+  background-image: url('assets/bg_secondary1.jpg');
+  background-size: cover;
+  background-position: center;
+  /* background-attachment: fixed; */
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+.dark-overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%; /* Adjust the width of the dark overlay */
+  height: 100%;
+  background: linear-gradient(310deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 70% ,rgba(0, 0, 0, 0) 100%);
+}
+
+
+.big-description-section  .content-box {
+  float:  left;
+  width: 20%;
+  /* background: #ffffff; */
+  z-index: 3;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+
+.big-description-section .content-box h1, h3, p{
+  color: white;
+}
+
+.big-description-section .content-box h1 {
+  font-size: 3rem;
+  letter-spacing: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgb(255, 153, 0);
+}
+
+.big-description-section .content-box h3 {
+  font-size: 1.7rem;
+  /* letter-spacing: 5px; */
+  font-weight: 100;
+  line-height: 40px;
+}
+.big-description-section .content-box p {
+  font-weight: 100;
+  font-size: 1rem;
+}
+
+/*? big description section 2 */
+#description-section2 {
+  background-image: url('assets/bg_secondary2.jpg');
+  justify-content: start;
+}
+
+#description-section2 .dark-overlay {
+  left: 0;
+  background: linear-gradient(20deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 70% ,rgba(0, 0, 0, 0) 100%);
+}
+
+#description-section2 #content-box2 {
+  float: right;
+  margin: 0;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+/*? big description section 3 */
+#description-section3 {
+  background-image: url('assets/bg_secondary3.jpg');
+  background-position: top;
 }
