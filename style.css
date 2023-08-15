@@ -568,3 +568,40 @@ p {
 .news_cards .news_card_item a:hover {
   text-decoration: underline;
 }
+
+/*! FOOTER */
+
+footer {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer ul  {
+  width: 100%;
+  /* background-color: aquamarine; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem ;
+}
+footer ul li a{
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  transition: .3s ease;
+}
+footer ul li a:hover {
+  color: rgb(255, 153, 0);
+}
+
+footer ul li div a{
+  font-size: 1.7rem;
+  transition: .3s ease;
+}
+footer ul li div a:hover {
+  color: rgb(255, 153, 0);
+}
