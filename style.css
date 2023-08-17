@@ -457,9 +457,8 @@ p {
   text-align: center;
 }
 
-
 /*! CARD APPEAR */
-.news_cards .news_card_item  .card {
+.news_cards .news_card_item .card {
   /* width: var(--card-width);
   height: var(--card-height); */
   width: 650px;
@@ -474,28 +473,28 @@ p {
   cursor: pointer;
 }
 
-.news_cards .news_card_item  .cover-image {
+.news_cards .news_card_item .cover-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.news_cards .news_card_item  .wrapper {
+.news_cards .news_card_item .wrapper {
   transition: all 0.5s;
   /* position: absolute; */
   width: 100%;
   z-index: -1;
 }
 
-.news_cards .news_card_item  .card:hover .wrapper {
+.news_cards .news_card_item .card:hover .wrapper {
   transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
   /* box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75); */
 }
 
-.news_cards .news_card_item  .wrapper::before, .news_cards .news_card_item
-.wrapper::after {
+.news_cards .news_card_item .wrapper::before,
+.news_cards .news_card_item .wrapper::after {
   content: "";
   opacity: 0;
   width: 100%;
@@ -504,7 +503,7 @@ p {
   position: absolute;
   left: 0;
 }
-.news_cards .news_card_item  .wrapper::before {
+.news_cards .news_card_item .wrapper::before {
   top: 0;
   height: 100%;
   background-image: linear-gradient(
@@ -514,7 +513,7 @@ p {
     rgba(12, 13, 19) 97%
   );
 }
-.news_cards .news_card_item  .wrapper::after {
+.news_cards .news_card_item .wrapper::after {
   bottom: 0;
   opacity: 1;
   /* background-image: linear-gradient(
@@ -525,16 +524,16 @@ p {
   ); */
 }
 
-.news_cards .news_card_item  .card:hover .wrapper::before,
+.news_cards .news_card_item .card:hover .wrapper::before,
 .wrapper::after {
   opacity: 1;
 }
 
-.news_cards .news_card_item  .card:hover .wrapper::after {
+.news_cards .news_card_item .card:hover .wrapper::after {
   height: 120px;
 }
 
-.news_cards .news_card_item  .character {
+.news_cards .news_card_item .character {
   width: 400px;
   opacity: 0;
   transition: all 0.5s;
@@ -542,7 +541,7 @@ p {
   z-index: -1;
 }
 
-.news_cards .news_card_item  .card:hover .character {
+.news_cards .news_card_item .card:hover .character {
   opacity: 1;
   transform: translate3d(0%, -30%, 100px);
 }
@@ -557,7 +556,7 @@ p {
   /* background-color: #c25b5b; */
 }
 
-.news_cards .news_card_item .news_card_icons .line-vertical-small{
+.news_cards .news_card_item .news_card_icons .line-vertical-small {
   background-color: #fff;
   height: 20px;
   width: 1px;
@@ -582,29 +581,29 @@ footer {
   align-items: center;
   justify-content: center;
 }
-footer ul  {
+footer ul {
   width: 100%;
   /* background-color: aquamarine; */
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 1rem ;
+  padding: 1rem;
 }
-footer ul li a{
+footer ul li a {
   color: white;
   font-size: 1.5rem;
   font-weight: 100;
   text-transform: uppercase;
   letter-spacing: 7px;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 footer ul li a:hover {
   color: rgb(255, 153, 0);
 }
 
-footer ul li div a{
+footer ul li div a {
   font-size: 1.7rem;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 footer ul li div a:hover {
   color: rgb(255, 153, 0);
@@ -623,19 +622,39 @@ footer ul li div a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 10% 0 5% 0;
 }
 
-.release_section  .release_log_box {
+.release_section .release_log_box {
   width: 70%;
   display: flex;
   background: #a53b3b;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
   border: 1px solid rgb(255, 153, 0);
   padding: 20px;
+  margin: 20px 0 20px 0;
 }
 
-.release_section  .release_log_box img{
+.release_section .release_log_box h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  margin-right: 50px;
+}
+
+.release_section .release_log_box p {
+  font-size: 1.1rem;
+  margin-right: 50px;
+}
+
+.release_section .release_log_box .data_release {
+  font-size: 1rem;
+  font-weight: 100;
+  margin-top: 20px;
+  color: rgb(255, 153, 0);
+}
+
+.release_section .release_log_box img {
   width: 30%;
   background-color: aquamarine;
 }
