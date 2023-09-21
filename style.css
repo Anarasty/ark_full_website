@@ -616,7 +616,11 @@ footer ul li div a:hover {
 
 .release_section {
   width: 100%;
-  background-color: rgb(37, 41, 41);
+  /* background-color: rgb(37, 41, 41); */
+  background-image: url(assets/test_bg2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
