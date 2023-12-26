@@ -629,6 +629,13 @@ footer ul li div a:hover {
   padding: 10% 0 5% 0;
 }
 
+.release_section  .release_section_title {
+  font-size: 3rem;
+  color: #fff;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
 .release_section .release_log_box {
   width: 70%;
   display: flex;
