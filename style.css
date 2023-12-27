@@ -646,6 +646,7 @@ footer ul li div a:hover {
   padding: 20px;
   margin: 20px 0 20px 0;
   transition: .3s ease;
+  border-radius: 10px;
 }
 
 .release_section .release_log_box:hover {
@@ -679,6 +680,7 @@ footer ul li div a:hover {
   margin-top: 10px;
   font-weight: bold;
   transition: .3s ease;
+  border-radius: 5px;
 }
 .release_section .release_log_box #release_modal_btn:hover {
   background: rgb(255, 153, 0);
@@ -686,7 +688,7 @@ footer ul li div a:hover {
 }
 
 .release_section .release_log_box img {
-  width: 450px;
+  max-width: 450px;
   background-color: rgb(18, 144, 102);
 }
 
@@ -694,6 +696,7 @@ footer ul li div a:hover {
   max-height: 70vh; /* Определение максимальной высоты модального окна */
   overflow-y: auto; /* Включение вертикальной прокрутки при необходимости */
   height: auto;
+  width: auto;
   display: none;
   position: fixed;
   top: 50%;
@@ -706,7 +709,7 @@ footer ul li div a:hover {
   /* text-align: center; */
 }
 .release_section .modal::-webkit-scrollbar {
-  width: 12px; /* Ширина полосы прокрутки */
+  width: 15px; /* Ширина полосы прокрутки */
 }
 
 .release_section .modal::-webkit-scrollbar-thumb {
@@ -718,7 +721,6 @@ footer ul li div a:hover {
 .release_section .modal::-webkit-scrollbar-track {
   background-color:rgb(255, 153, 0); /* Цвет фона полосы прокрутки */
 }
-
 
 .release_section .modal-background {
   display: none;
@@ -737,6 +739,41 @@ footer ul li div a:hover {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 10px;
+  padding-right: 10px;
   cursor: pointer;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  transition: .3s ease;
+}
+
+.release_section .close-button:hover {
+  color:rgb(255, 153, 0);
+  text-shadow: 0 0 4px rgb(255, 153, 0);;
+}
+
+.release_section .modal-content p{
+font-size: 1rem;
+/* padding-bottom: 20px; */
+}
+
+.release_section .modal-content span {
+  color:rgb(255, 153, 0);
+}
+
+.release_section .modal-content h1 {
+  font-size: 2rem;
+  padding: 10px 0 10px 0;
+  color: #fff;
+}
+
+.release_section .modal-content h3 {
+  font-size: 1.5rem;
+  color:rgb(255, 153, 0);
+}
+
+
+.release_section .modal-content img {
+  max-width: 900px;
+  margin: 0 auto;
 }

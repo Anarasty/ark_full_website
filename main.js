@@ -31,15 +31,13 @@ modals.forEach((modal, index) => {
 
 // Обрезание текста при превышении символов
 const maxCharacters = 200;
-const releaseLogBoxInfoDescr = document.querySelector(
-  ".release_log_box_info_descr"
-);
+const descrElements = document.querySelectorAll(".release_log_box_info_descr");
 
-if (releaseLogBoxInfoDescr) {
-  const textContent = releaseLogBoxInfoDescr.textContent.trim();
+descrElements.forEach((element) => {
+  const textContent = element.textContent.trim();
 
   if (textContent.length > maxCharacters) {
     const truncatedText = textContent.substring(0, maxCharacters) + "...";
-    releaseLogBoxInfoDescr.textContent = truncatedText;
+    element.textContent = truncatedText;
   }
-}
+});
