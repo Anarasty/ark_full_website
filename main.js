@@ -41,3 +41,4 @@ descrElements.forEach((element) => {
     element.textContent = truncatedText;
   }
 });
+
