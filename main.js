@@ -1,5 +1,3 @@
-console.log("tes1");
-
 // Получаем ссылки на элементы модального окна и кнопки "Посмотреть больше"
 const modals = document.querySelectorAll(".modal");
 const modalBackground = document.getElementById("modal-background");
