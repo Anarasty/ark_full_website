@@ -6,6 +6,12 @@
   box-sizing: border-box;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -692,6 +698,7 @@ footer ul li div a:hover {
   background-color: rgb(18, 144, 102);
 }
 
+/*!!! MODAL */
 .release_section .modal {
   max-height: 70vh; /* Определение максимальной высоты модального окна */
   overflow-y: auto; /* Включение вертикальной прокрутки при необходимости */
@@ -776,4 +783,133 @@ font-size: 1rem;
 .release_section .modal-content img {
   max-width: 900px;
   margin: 0 auto;
+}
+
+/*!! MORE INFO BTN */
+.more_info_box {
+  width: 100%;
+  min-height: 10vh;
+  /* background: #6b4444; */
+  text-align: center;
+  margin: 50px auto 0;
+}
+
+.more_info_box h1 {
+  font-size: 2rem;
+  color: #fff;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+
+.more_info_box img {
+  width: 45%;
+  height: auto;
+}
+
+.more_info_box .button-container-2 {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid #fff;
+  /* font-family: "Lato", sans-serif; */
+  /* font-weight: 300; */
+  /* font-size: 20px; */
+  transition: 0.4s;
+  /* letter-spacing: 1px; */
+}
+
+.more_info_box .button-container-2 button {
+  width: 101%;
+  height: 100%;
+  /* font-family: "Lato", sans-serif; */
+  /* font-weight: 300; */
+  /* font-size: 11px; */
+  /* letter-spacing: 1px; */
+  /* font-weight: bold; */
+  cursor: pointer;
+}
+
+.more_info_box .button-container-2 button {
+  background: rgb(255, 153, 0);
+  -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
+  mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
+  -webkit-mask-size: 3000% 100%;
+  mask-size: 3000% 100%;
+  border: none;
+  /* color: #fff; */
+  -webkit-animation: ani2 0.7s steps(29) forwards;
+  animation: ani2 0.7s steps(29) forwards;
+}
+
+.more_info_box .button-container-2 button:hover {
+  -webkit-animation: ani 0.7s steps(29) forwards;
+  animation: ani 0.7s steps(29) forwards;
+}
+
+.more_info_box .mas {
+  position: absolute;
+  color: rgb(255, 153, 0);
+  /* text-align: center; */
+  width: 101%;
+  /* font-family: "Lato", sans-serif; */
+  /* font-weight: 300; */
+  /* font-size: 11px; */
+  /* margin-top: 17px; */
+  overflow: hidden;
+  font-weight: bold;
+  background: rgb(255, 255, 255);
+}
+
+@-webkit-keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+
+@keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+
+@-webkit-keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+
+@keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
 }
