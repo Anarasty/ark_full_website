@@ -913,3 +913,54 @@ font-size: 1rem;
     mask-position: 0 0;
   }
 }
+
+/*? .. */
+
+.dlc_section {
+  width: 100%;
+  /* background-color: rgb(37, 41, 41); */
+  background-image: url(assets/test_bg2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10% 0 5% 0;
+}
+
+.dlc_section h1 {
+  /* margin: 100px; */
+  color: #fff;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #3b2a2a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+  height: 600px;
+  width: 600px;
+}
