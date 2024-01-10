@@ -975,6 +975,24 @@ font-size: 1rem;
   object-fit: cover;
 }
 
+.dlc_section .swiper-slide h1{
+  color: #fff;
+  font-size: 2.5rem;
+  /* background: #000000; */
+  width: 80%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+.dlc_section .swiper-slide p {
+  width: 80%;
+  line-height: 30px;
+  font-size: 1.1rem;
+  color: #fff;
+  text-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
 .dlc_section .swiper {
   margin-left: auto;
   margin-right: auto;
