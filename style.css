@@ -955,8 +955,40 @@ font-size: 1rem;
   align-items: center;
 }
 
+.dlc_section .swiper-slide .slider_item_purchase_btn {
+  color: #fff;
+  font-size: 1.6rem;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  padding: 5px 25px;
+  margin: 30px auto;
+  text-transform: uppercase;
+  transition: .3s ease;
+}
+
+.dlc_section .swiper-slide .slider_item_purchase_btn:hover {
+  color:rgb(255, 153, 0);
+  border-color:rgb(255, 153, 0);
+  /* font-weight: 900; */
+  animation-name: moveShadow;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes moveShadow {
+  0% {
+    box-shadow: 0 0 0px rgb(255, 153, 0);
+  }
+  50%{
+    box-shadow: 0 0 30px rgb(255, 153, 0);
+  }
+  100% {
+    box-shadow: 0 0 0px rgb(255, 153, 0);
+  }
+}
+
 .dlc_section .slider_item1 .video-bg {
-  filter: brightness(0.4);
+  /* filter: brightness(0.4); */
   width: 100vw;
   height: 100vh;
   object-fit: cover;
@@ -966,6 +998,10 @@ font-size: 1rem;
   top: 0;
   bottom: 0;
   z-index: -3;
+}
+
+.dlc_section .slider_item2 .video-bg {
+  filter: brightness(0.4);
 }
 
 .dlc_section .swiper-slide img {
