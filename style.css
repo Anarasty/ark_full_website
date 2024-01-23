@@ -1040,3 +1040,20 @@ font-size: 1rem;
   width: 300px;
   height: 300px;
 }
+
+/* !!! CONTACT PAGE */
+.contact_section {
+  width: 100%;
+  background-color: #a53b3b;
+  /* background-color: rgb(37, 41, 41); */
+  /* background-image: url(assets/test_bg2.jpg); */
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
+  min-height: 100vh;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  padding: 10% 0 5% 0;
+}
