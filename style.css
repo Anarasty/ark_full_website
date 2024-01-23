@@ -1057,3 +1057,23 @@ font-size: 1rem;
   justify-content: center; */
   padding: 10% 0 5% 0;
 }
+.contact_maininfo_container {
+  background-color: #694d4d;
+  /* width: 100%; */
+  margin: 0 15%;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.contact_info_box, .contact_form {
+  width: 50%;
+}
+
+.contact_info_box {
+  background-color: #3ab234;
+}
+
+.contact_info_box h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
