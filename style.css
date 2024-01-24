@@ -1077,3 +1077,19 @@ font-size: 1rem;
   font-size: 3rem;
   font-weight: bold;
 }
+
+/* !!!!FORM */
+
+.contact_form {
+background-color: #98b70d;
+}
+.contact_form form {
+  background-color: antiquewhite;
+  width: 100%;
+
+}
+
+.form_container1 {
+  display: flex;
+  justify-content: space-between;
+}
