@@ -63,13 +63,20 @@
                             <input type="email" name="userEmail" id="userEmail">
                         </div>
                         <div>
-                            <label for="gameIssue">What error do you have</label>
+                            <label for="gameIssue">Select one of the categories *</label>
                             <select name="gameIssue" id="gameIssue">
-                                <option value="1">d</option>
-                                <option value="2">d</option>
-                                <option value="3">d</option>
-                                <option value="4">d</option>
+                                <option value="1">--------</option>
+                                <option value="2">In-game error</option>
+                                <option value="3">Server issues</option>
+                                <option value="4">Payment problems</option>
+                                <option value="4">Complaint against a player</option>
+                                <option value="4">Other</option>
                             </select>
+                        </div>
+
+                        <div>
+                            <label for="issueMessage"></label>
+                            <textarea name="issueMessage" id="issueMessage" cols="50" rows="10"></textarea>
                         </div>
                     </div>
                 </form>
