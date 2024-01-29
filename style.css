@@ -1092,9 +1092,7 @@ background-color: #98b70d;
 .form_container1 {
   display: flex;
   justify-content: space-between;
-  background-color: #6c6a6a;
   width: 100%;
-
 }
 
 .form_container2 {
@@ -1107,6 +1105,34 @@ background-color: #98b70d;
 }
 
 .form_container2 input {
+  border: 1px solid black;
+  font-size: 1.2rem;
+  font-family: "Noto Sans", sans-serif;
+  outline: none;
+  border-radius: 5px;
+  padding: 3px 6px;
+  transition: .2s ease;
+}
+
+.form_container2 input:focus {
+  outline: 1px solid rgb(255, 153, 0);
+  border-color: rgb(255, 153, 0);
+}
+
+.form_container3 {
+background-color: #6c6a6a;
+width: 100%;
+display: flex;
+flex-direction: column;
+}
+
+.form_container4 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form_container4 input {
   border: 1px solid black;
   font-size: 1.2rem;
   font-family: "Noto Sans", sans-serif;
