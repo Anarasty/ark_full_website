@@ -1149,3 +1149,22 @@ flex-direction: column;
   border-radius: 5px;
   padding: 3px 6px;
 }
+
+.form_container5 {
+  /* background-color: #694d4d; */
+  width: 100%;
+  display: flex;
+
+}
+
+.form_container5 select {
+  width: 40%;
+  margin-left: 20px;
+
+  border: 1px solid black;
+  font-size: 1.2rem;
+  font-family: "Noto Sans", sans-serif;
+  outline: none;
+  border-radius: 5px;
+  padding: 3px 6px;
+}
