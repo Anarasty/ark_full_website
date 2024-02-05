@@ -1114,7 +1114,7 @@ background-color: #98b70d;
 }
 
 .form_container2 input {
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.5);
   font-size: 1.2rem;
   font-family: "Noto Sans", sans-serif;
   outline: none;
@@ -1142,7 +1142,7 @@ flex-direction: column;
 }
 
 .form_container4 input {
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.5);
   font-size: 1.2rem;
   font-family: "Noto Sans", sans-serif;
   outline: none;
@@ -1161,7 +1161,7 @@ flex-direction: column;
   width: 40%;
   margin-left: 20px;
 
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.5);
   font-size: 1.2rem;
   font-family: "Noto Sans", sans-serif;
   outline: none;
